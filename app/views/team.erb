@@ -2,14 +2,10 @@
 
 <h2><%=@input[:motto]%></h2>
 
-<h2>Hero Name:<%=@input[:members][0][:name]%></h2>
-<p>Hero Power:<%=@input[:members][0][:power]%></p>
-<p>Hero Biography:<%=@input[:members][0][:biography]%></p>
+<%=@inpit[:members].each do|x|%>
 
-<h2>Hero Name:<%=@input[:members][0][:name]%></h2>
-<p>Hero Power:<%=@input[:members][0][:power]%></p>
-<p>Hero Biography:<%=@input[:members][0][:biography]%></p>
+<h2>Hero Name:<%=x[:name]%></h2>
+<p>Hero Power:<%=x[:power]%></p>
+<p>Hero Biography:<%=x[:biography]%></p>
 
-<h2>Hero Name:<%=@input[:members][0][:name]%></h2>
-<p>Hero Power:<%=@input[:members][0][:power]%></p>
-<p>Hero Biography:<%=@input[:members][0][:biography]%></p>
+<%=end%>
