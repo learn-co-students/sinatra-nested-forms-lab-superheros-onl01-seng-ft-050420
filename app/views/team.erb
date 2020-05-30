@@ -1,9 +1,8 @@
 <h1><%= @input[:name] %></h1>
 <h2>Team Motto: <%= @input[:motto] %></h2>
 
-<%= @input[:members].each do |x| %>
+<% @input[:members].each do |x| %>
   <h2>Hero Name: <%= x[:name] %></h2>
-  <p>Hero power: <%= x[:power] %><</p>
-  <p>p> Hero biography: <%= x[:bio] %></p>
-<%= end %>
-
+  <p>Hero Power: <%= x[:power] %></p>
+  <p>p> Hero Biography: <%= x[:bio] %></p>
+<% end %>
