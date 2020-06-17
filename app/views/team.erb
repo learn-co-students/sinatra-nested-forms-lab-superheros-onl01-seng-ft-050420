@@ -1,3 +1,14 @@
 
+<% binding.pry %>
+<h1> <%= @team.name %>  </h1>
+<h2>Team Motto: <%= @team.motto %>  </h2>
+
+<% @hero.each do |t| %>
+<h2>Hero Name: <%= t.name %> </h2>
+<p> Hero Power: <%= t.power %></p>
+<p> Hero Biography: <%= t.bio %></p>
+
+
+<% end %>
 
 
